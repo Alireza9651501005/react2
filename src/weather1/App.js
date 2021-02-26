@@ -64,6 +64,10 @@ class App extends React.Component {
             <div className='App'>
                 <Title />
                 <Form getit = {this.getweather}/>
+                <div className='creator'>
+                    <h3><strong style={{color:'red'}}>Creator:</strong>Alireza Mohammadi</h3>
+                    <p>alireza691111@gmail.com</p>
+                </div>
                 <Weather 
                     Temprature = {this.state.Temprature}
                     Humidity = {this.state.Humidity}
