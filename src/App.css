@@ -8,21 +8,146 @@
   border-radius: 25px;
   padding: 2%;
   box-shadow: 10px 10px;
-  width: 40%;
-  height: 60%;
+  width: 60%;
+  height: 85vh;
   margin: auto;
 }
 
 
-#root, body, html {
+/* #root, body, html {
   margin: 0;
   padding: 0;
   height: 100vh;
   box-sizing: border-box;
 
-}
+} */
 
 .weather > p {
   border-radius: 5px;
   font-weight: bold;
+}
+
+/* title */
+.title p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* End title */
+
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > * {
+  margin: 5px 0 0 0;
+}
+
+.form input{
+  height: 4vh;
+  width: 28vh;
+}
+
+.form div {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form button {
+  background-color: red;
+  height: 6vh;
+  width: 28vh;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* End Form */
+
+@media screen and (max-width:690px) {
+  .title h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .weather p {
+    font-size: 17px;
+  }
+  .title p {
+    font-size: 15px;
+  }
+  .form p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  /* .form button {
+    height: 5vh;
+    width: 20vh;   
+  }
+  .form input{
+    height: 4vh;
+    width: 20vh;
+  } */
+  
+}
+
+
+@media screen and (max-width:575px) {
+  .title h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .weather p {
+    font-size: 13px;
+  }
+  .title p {
+    font-size: 10px;
+  }
+  .form p {
+    font-size: 10px;
+  }
+  .form button {
+    height: 5vh;
+    width: 20vh; 
+    font-size: 10px; 
+  }
+  .form input{
+    height: 4vh;
+    width: 20vh;
+  }  
+}
+
+@media screen and (max-width:445px) {
+  .title h2 {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .title p {
+    font-size: 8px;
+  }
+  .form p {
+    font-size: 8px;
+  }
+  .form button {
+    height: 5vh;
+    width: 20vh; 
+    font-size: 8px; 
+  }
+  .form input{
+    height: 4vh;
+    width: 20vh;
+  }  
+  .weather p {
+    font-size: 8px;
+  }
 }

@@ -16,14 +16,16 @@ class Form extends React.Component {
     render () {
         return (
             <form className='form'>
-                <input type="text" name = 'item1' onChange={this.changeHandler}  placeholder = 'city...'/>
-                <input type="text" name = 'item2' onChange={this.changeHandler} placeholder = 'Country.IR..'/>
-                <button onClick ={this.props.getit}>Get Weather</button>
+                    <p>City:</p>
+                    <input type="text" name = 'item1' onChange={this.changeHandler}  placeholder = 'tehran...'/>
+                    <p>Country:</p>
+                    <input type="text" name = 'item2' onChange={this.changeHandler} placeholder = 'IR...'/>
+                <button onClick ={this.props.getit}>Get Weather State</button>
             </form>
         )
     }
 }
-const mapDipatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     dispatch:dispatch
 })
-export default connect(mapDipatchToProps)(Form)
+export default connect(mapDispatchToProps)(Form)
