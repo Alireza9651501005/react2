@@ -20,7 +20,7 @@ class Form extends React.Component {
                     <input type="text" name = 'item1' onChange={this.changeHandler}  placeholder = 'tehran...'/>
                     <p>Country:</p>
                     <input type="text" name = 'item2' onChange={this.changeHandler} placeholder = 'IR...'/>
-                <button onClick ={this.props.getit}>Get Weather State</button>
+                <button onClick ={this.props.getit}>Get State</button>
             </form>
         )
     }
